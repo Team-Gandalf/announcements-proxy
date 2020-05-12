@@ -3,7 +3,6 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
 
 app.use(express.static(`${__dirname}/../public`));
 
@@ -13,11 +12,21 @@ app.use(express.static(`${__dirname}/../public`));
 const announcementsProxy = createProxyMiddleware({
   target: 'http://localhost:8080',
   changeOrigin: true,
+  router: {
+    '/randomGame': 'http://localhost:8080',
+    '/updateLikes': 'http://localhost:8080/',
+  },
 });
 
 // USE THE PROXY FOR THE ANNOUNCEMENT APP AT A CERTAIN ENDPOINT
 app.use(
-  '/',
+  '/randomGame',
   announcementsProxy);
+
+app.use(
+  '/updateLikes',
+  announcementsProxy);
+
+app.use(bodyParser.json());
 
 module.exports = app;
