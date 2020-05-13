@@ -16,9 +16,21 @@ const announcementsProxy = createProxyMiddleware({
   changeOrigin: true,
 });
 
-// << Reviews App >>
+// << Sidebar App >>
 const sidebarProxy = createProxyMiddleware({
   target: 'http://localhost:1991/',
+  changeOrigin: true,
+});
+
+// << Media App >>
+const mediaProxy = createProxyMiddleware({
+  target: 'http://localhost:8000/',
+  changeOrigin: true,
+});
+
+// << Reviews App >>
+const reviewsProxy = createProxyMiddleware({
+  target: 'http://localhost:4200/',
   changeOrigin: true,
 });
 
@@ -35,9 +47,20 @@ app.use(
   '/updateLikes',
   announcementsProxy);
 
+// << SIDEBAR PROXY >>
 app.use(
   '/mainBody',
   sidebarProxy);
+
+// << SIDEBAR PROXY >>
+app.use(
+  '/media',
+  mediaProxy);
+
+// << SIDEBAR PROXY >>
+app.use(
+  '/api/reviews/',
+  reviewsProxy);
 
 app.use(bodyParser.json()); // THIS NEEDS TO BE HERE AT THE END
 

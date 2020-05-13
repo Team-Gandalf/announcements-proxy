@@ -5,18 +5,21 @@
 }
 
 body {
-  /* background: #1b2838;
-  background-image: url('https://steamcdn-a.akamaihd.net/steam/apps/546560/page_bg_generated_v6b.jpg?t=1584985275');
+  height: 100%;
+  background-color: #1B2838;
+  background-image: url('./TempAssets/background.jpg');
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: center top; */
-  /* color: #c6d4df; */
+  background-size: cover;
+  width: 940px;
+  margin: 0 auto;
 }
 
 #Announcements {
   display: inline-flex;
   max-width: 30rem;
-  width: 20rem;
-  height: 18rem;
+  width: 18rem;
+  height: 16rem;
   font-size: 2em;
   color: ghostwhite;
   border: none;
@@ -87,7 +90,7 @@ div#thumbnail {
 #articles {
   background: #0d0f17f7;
   color: white;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
