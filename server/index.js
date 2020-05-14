@@ -12,25 +12,25 @@ app.use(express.static(`${__dirname}/../public`));
 
 // << Announcements App >>
 const announcementsProxy = createProxyMiddleware({
-  target: 'http://localhost:8080',
+  target: 'http://3.17.138.9:8080/',
   changeOrigin: true,
 });
 
 // << Sidebar App >>
 const sidebarProxy = createProxyMiddleware({
-  target: 'http://localhost:1991/',
+  target: 'http://52.14.114.30:1991/',
   changeOrigin: true,
 });
 
 // << Media App >>
 const mediaProxy = createProxyMiddleware({
-  target: 'http://localhost:8000/',
+  target: 'http://3.23.132.230:8000/',
   changeOrigin: true,
 });
 
 // << Reviews App >>
 const reviewsProxy = createProxyMiddleware({
-  target: 'http://localhost:4200/',
+  target: 'http://54.67.101.150:4200/',
   changeOrigin: true,
 });
 
