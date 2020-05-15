@@ -1,7 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 
 /* body {
   background-color: #1B2838;
@@ -11,9 +7,6 @@
   font-size: 12px;
 } */
 
-div {
-  display: block;
-}
 
 h2 {
   border-top: 1px solid black;
