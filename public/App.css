@@ -1,0 +1,11 @@
+.Announcements {
+  display: inline-flex;
+  max-width: 30rem;
+  width: 20rem;
+  height: 18rem;
+  font-size: 2em;
+  color: ghostwhite;
+  border: none;
+  box-shadow: -1px 1px 0.3em black;
+}
+
