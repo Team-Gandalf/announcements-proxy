@@ -417,3 +417,7 @@ button#copy {
   border: none;
   color: white;
 }
+
+.bottom {
+  padding-top: 10rem;
+}
