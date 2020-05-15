@@ -1,7 +1,3 @@
-/* * {
-  padding: 0;
-  margin: 0;
-} */
 
 /* body {
   background-color: #1B2838;
@@ -10,10 +6,7 @@
   font-weight: normal;
   font-size: 12px;
 } */
-/*
-div {
-  display: block;
-} */
+
 
 h2 {
   border-top: 1px solid black;
@@ -586,8 +579,4 @@ button:focus {
 
 .friendPlayerLevel .friendPlayerLevelNum {
   color: #e5e5e5;
-}
-
-.user_reviews {
-  padding-top: 13rem;
 }
