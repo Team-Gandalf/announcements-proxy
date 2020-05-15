@@ -411,3 +411,7 @@ a:link {
 .content-desc {
   margin-bottom: 12px;
 }
+
+div#vrsupportitle {
+  color: #61686d;
+}
